@@ -99,7 +99,7 @@ const optionSettingProperties: elasticbeanstalk.CfnEnvironment.OptionSettingProp
 const elbEnv = new elasticbeanstalk.CfnEnvironment(this, 'Environment', {
     environmentName: props?.envName ?? "MyWebAppEnvironment",
     applicationName: app.applicationName || appName,
-    solutionStackName: '64bit Amazon Linux 2 v5.8.5 running Node.js 18',
+    solutionStackName: '64bit Amazon Linux 2 v5.8.6 running Node.js 18',
     optionSettings: optionSettingProperties,
     versionLabel: appVersionProps.ref,
 });
